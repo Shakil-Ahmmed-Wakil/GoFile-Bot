@@ -19,7 +19,7 @@ async function run() {
         const el = await page.$(selector);
         const text = await el.evaluate(e => e.innerHTML);
         console.log(text);
-        
+
     } catch (error) {
         console.error("Scrape Failed", error);
     }
